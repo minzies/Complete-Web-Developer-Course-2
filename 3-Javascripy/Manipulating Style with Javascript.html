@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+
+    <body>
+        <p id="text">Hello World</p> 
+
+        <button id="My button"> Changed Text</button>
+
+        <p id="Firstparagraf">Javascript is ...</p>
+
+        <button id="secondbutton"> Append/Perpanjang Text </button>
+
+        <p id="Emptyparagraf"></p>
+
+        <button id="thirdbutton"> Buat text </button>
+
+        <p id="styletext"> More style text </p>
+
+        <button id="stylebutton">Style Button</button>
+        
+        <script type="text/javascript">
+
+        document.getElementById("My button").onclick = function () {
+
+            alert ("This will change the text")
+            
+            document.getElementById("text").innerHTML = "Hello Naura";
+
+        }
+
+        document.getElementById("secondbutton").onclick = function () {
+
+            document.getElementById("Firstparagraf").innerHTML = "I think " + document.getElementById("Firstparagraf").innerHTML + "keren !";
+        }
+
+        document.getElementById("thirdbutton").onclick = function () {
+
+            document.getElementById("Emptyparagraf").innerHTML = "Cilukba !";
+        }
+
+        document.getElementById("stylebutton").onclick = function () {
+
+            document.getElementById("styletext").style.display = "none";
+        }
+        </script>
+
+    </body>
+</html>
