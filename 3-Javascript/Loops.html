@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+
+       
+    </head>
+
+    <body>
+
+        <div id="tweetDiv"></div>    
+
+        <script type="text/javascript">
+
+            var tweetString = "";
+
+            var tweets = ["Hi everyone", "I love cococrunch", "Malam bosque", "sweet dreams!"]
+
+            for (var i = 0; i < tweets.length; i++) {
+                
+                //alert(tweets[i]);
+
+                tweetString = tweetString + "<p>" + tweets[i] + "</p>"; 
+            }
+            
+            document.getElementById("tweetDiv").innerHTML = tweetString;
+        </script>
+
+    </body>
+</html>

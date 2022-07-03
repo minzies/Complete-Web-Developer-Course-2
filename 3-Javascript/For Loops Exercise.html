@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+        //INSTRUCTIONS: Create a for loop that will cycle an array containing the words Red, Yellow and Blue and add them to the HTML of the p tag with id of colourList, separated by a space.
+
+        <!doctype html>
+        <html>
+            <head>
+                <title>For Loops</title>
+            </head>
+            <body>
+                <p id="colourList"></p>
+                  <script type="text/javascript">
+                    var colours = ["Red", "Yellow", "Blue"];
+                    var text = "";
+                    var i;
+                    for (i = 0; i < colours.length; i++) {
+                        text += colours[i] + " ";
+                    }
+                    document.getElementById("colourList").innerHTML = text;
+                  </script>
+            </body>
+        </html>

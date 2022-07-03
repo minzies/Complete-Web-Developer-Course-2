@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+
+       
+    </head>
+
+    <body>
+
+        <p>What is the magic word</p>
+
+        <p><input type="text" id="magicWord"></p>
+
+        <p><button id="checkMagicWord">Enter</button></p>
+                
+        <script type="text/javascript">
+
+            /*var x = 2;
+
+            
+            if(x == 1) {
+            
+                alert("x adalah 1!")
+            
+            } else {
+            
+                alert("x bukan 1!");
+            
+            }*/
+
+            document.getElementById("checkMagicWord").onclick = function() {
+                //alert("halo");
+                
+                var magicWordEntered = document.getElementById("magicWord").value;
+                
+                //alert(magicWordEntered);
+
+                var magicWord ="abracadabra";
+
+                if(magicWordEntered == magicWord) {
+
+                    alert("You got it!");
+
+                }else {
+                    alert("Nope you got it wrong");
+                }
+            }
+
+        </script>
+
+    </body>
+</html>
